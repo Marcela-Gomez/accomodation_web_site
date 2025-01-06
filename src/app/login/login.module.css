@@ -1,0 +1,91 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+  background-image:url('https://res.cloudinary.com/dnc8k8wwv/image/upload/v1735869010/destinations-235942_1280_sqdtc7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form_container{
+  width: 40%;
+  border: 2px solid #DA0338;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #69f45ca2 ;
+}
+
+.form_container input{
+  opacity: 100%;
+  width: 90%;
+  margin: 5px;
+  height: 2rem;
+  border-radius: 10px;
+  border: 2px solid #DA0338;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.form_container button{
+  opacity: 100%;
+  width: 92%;
+  height: 2.8rem;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #E7436C;
+  border: 2px solid #69f45c;
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+.form_container div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 360px;
+}
+
+.form_container div p{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.form_container div a{
+  font-size: 1.5rem;
+  color: #DA0338;
+}
+
+.form_container h1{
+  color: white;
+  size: 3rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 575px) {
+  .form_container{
+    width: 90%;
+  }
+
+  .form_container div{
+    width: 70%;
+  }
+
+  .form_container div p, .form_container div a{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .form_container{
+    width: 60%;
+  }
+
+  .form_container div{
+    width: 85%;
+  }
+}

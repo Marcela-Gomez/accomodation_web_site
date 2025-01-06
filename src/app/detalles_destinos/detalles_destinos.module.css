@@ -1,0 +1,148 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tittle{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container_img{
+    grid-column: 1/2;
+    margin: 10px;
+    border-radius: 20px;
+    background-color:#DA0338;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_image_principal{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    background-color: black;
+    width: 95%;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.container_image_principal img{
+    height: 500px;
+    max-width: 100%;
+}
+
+.container_image_secundario{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.container_image_secundario img{
+    height: 100px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.container_info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    margin: 20px;
+}
+
+.tittle_info_description{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    font-size: 2.5rem;
+}
+
+.tittle_info{
+    font-size: 2.5rem;
+}
+
+.info{
+    font-size: 2rem;
+}
+
+.description{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    font-size: 1.5rem;
+}
+
+
+  
+@media screen and (max-width: 575px) {
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+
+    .container_img{
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    .container_info{
+        grid-column: 1/2;
+        grid-row: auto;
+        gap: 10px;
+    }
+    
+    .container_image_principal{
+        height: 300px;
+    }
+
+    .container_image_principal img{
+        height: 300px;
+    }
+
+    .tittle{
+        font-size: 2rem;
+    }
+ 
+    .tittle_info_description{
+        font-size: 1.5rem;
+    }
+
+    .tittle_info{
+        font-size: 1.5rem;
+    }
+
+    .info{
+        font-size: 1.5rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+}
+  
+@media screen and (max-width: 990px) and (min-width: 576px) {
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .container_img{
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    .container_info{
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    .tittle{
+        font-size: 3rem;
+    }
+}

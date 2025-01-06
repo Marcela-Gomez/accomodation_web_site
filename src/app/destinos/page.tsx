@@ -1,6 +1,7 @@
 import Card from "@/app/components/Card";
-import Navbar from "./components/Navbar";
-import Styles from "./destinos/destinos.module.css";
+import Navbar from "../components/Navbar";
+import Styles from "./destinos.module.css";
+import Navbar_users from "../components/Navbar_users";
 
 const destinos = [
   {
@@ -25,12 +26,11 @@ const destinos = [
   },
 ];
 
-
-export default function Home() {
+export default function Destinos() {
   return (
     <main>
-      <Navbar/>
-      <h1 className={Styles.tittle_destinos}>Destinos</h1>
+      <Navbar_users/>
+      <h1 className={Styles.tittle_destinos}>Mis destinos</h1>
       <div className={Styles.container_card}>
         {destinos.map((destino, index) => (
           <Card
