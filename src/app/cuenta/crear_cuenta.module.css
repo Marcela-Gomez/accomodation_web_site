@@ -40,12 +40,12 @@
     border: 2px solid #69f45c;
     color: white;
     font-size: 1.5rem;
-    grid-column: 1/3;
-    grid-row: 6/7;
+    grid-column: 1/3; 
+    grid-row: 7/7; 
 }
 
 .address{
-    grid-row: 5/6;
+    grid-row: 6/6;
     grid-column: 1/3;
     width: 92%;
     margin: 5px;
@@ -61,7 +61,7 @@
     align-items: center;
     justify-content: space-between;
     width: 360px;
-    grid-row: 7/8;
+    grid-row: 8/8;
     grid-column: 1/3;
 
 }

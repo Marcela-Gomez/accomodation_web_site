@@ -13,6 +13,8 @@ export default function Cuenta() {
           <input type="text" placeholder="Apellido" className={Styles.input_cuenta} />
           <input type="date" placeholder="Fecha de nacimiento"  className={Styles.input_cuenta}/>
           <input type="email" placeholder="Correo" className={Styles.input_cuenta}/>
+          <input type="number" placeholder="Telefono" className={Styles.input_cuenta}/>
+          <input type="text" placeholder="Pais" className={Styles.input_cuenta}/>
           <input type="text" placeholder="Usuario"  className={Styles.input_cuenta}/>
           <input type="password" placeholder="Contraseña"  className={Styles.input_cuenta} />
           <input type="text" placeholder="Dirección" className={Styles.address}/>
