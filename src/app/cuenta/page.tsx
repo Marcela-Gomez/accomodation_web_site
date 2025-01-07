@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Link from 'next/link';
 import Styles from './crear_cuenta.module.css';
+import DateInput from '../components/date';
 
 export default function Cuenta() {
   return (
@@ -11,7 +12,7 @@ export default function Cuenta() {
           <h1>Crear Cuenta</h1>
           <input type="text" placeholder="Nombre"  className={Styles.input_cuenta}/>
           <input type="text" placeholder="Apellido" className={Styles.input_cuenta} />
-          <input type="date" placeholder="Fecha de nacimiento"  className={Styles.input_cuenta}/>
+          <DateInput/>
           <input type="email" placeholder="Correo" className={Styles.input_cuenta}/>
           <input type="number" placeholder="Telefono" className={Styles.input_cuenta}/>
           <input type="text" placeholder="Pais" className={Styles.input_cuenta}/>
@@ -23,7 +24,7 @@ export default function Cuenta() {
             <p>¿Ya tienes cuenta? </p><Link href='/cuenta'>Iniciar sesión</Link>
           </div>
         </form>
-        </div>
+      </div>   
     </>
   );
 }
