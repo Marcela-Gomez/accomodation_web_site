@@ -9,6 +9,9 @@ interface CardProps {
   const Card: React.FC<CardProps> = ({ title, description, image }) => {
     return (
       <div className={Styles.card}>
+        <div className={Styles.icono}><span className="material-symbols-outlined">
+delete
+</span></div>
         <div className={Styles.container_image}>
           <img src={image} alt={title} className={Styles.image_card} />
         </div>
